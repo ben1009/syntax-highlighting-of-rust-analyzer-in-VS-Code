@@ -1,0 +1,129 @@
+{
+  "window.zoomLevel": 2,
+  "go.useLanguageServer": true,
+  "workbench.sideBar.location": "right",
+  "editor.fontLigatures": true,
+  "files.autoSave": "afterDelay",
+  "editor.formatOnSave": true,
+  "go.formatTool": "gofmt",
+  "go.autocompleteUnimportedPackages": true,
+  "go.liveErrors": {
+    "enabled": true
+  },
+  "go.buildOnSave": "package",
+  "go.vetOnSave": "package",
+  "go.lintOnSave": "package",
+  "editor.largeFileOptimizations": false,
+  "workbench.colorCustomizations": {},
+  "http.proxySupport": "off",
+  "go.toolsManagement.autoUpdate": true,
+  "editor.wordWrap": "on",
+  "[Log]": {},
+  "markdown-preview-enhanced.previewTheme": "github-light.css",
+  "tabnine.experimentalAutoImports": true,
+  "editor.fontSize": 11,
+  "editor.fontVariations": false,
+  "todohighlight.keywords": [
+    // "DEBUG:",
+    // "REVIEW:",
+    // {
+    //     "text": "NOTE:",
+    //     "color": "#ff0000",
+    //     "backgroundColor": "yellow",
+    //     "overviewRulerColor": "grey"
+    // },
+    // {
+    //     "text": "HACK:",
+    //     "color": "#000",
+    //     "isWholeLine": false,
+    // },
+    {
+      "text": "TODO:",
+      "color": "yellow",
+      // "border": "1px solid red",
+      // "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
+      "backgroundColor": "rgba(0,0,0,.2)"
+      // "isWholeLine": true,
+      //other styling properties goes here ...
+    }
+  ],
+  "todohighlight.isCaseSensitive": false,
+  "workbench.iconTheme": "eq-material-theme-icons-light",
+  "editor.fontFamily": "JetBrains Mono, fira code, Menlo, Monaco, 'Courier New', monospace",
+  // Controls the font family.
+  // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
+  // "editor.lineHeight": 24,
+  // Enables font ligatures
+  // Controls if file decorations should use badges.
+  // "explorer.decorations.badges": false,
+  "todohighlight.isEnable": true,
+  "rust-analyzer.check.command": "clippy",
+  "editor.semanticTokenColorCustomizations": {
+    "enabled": true,
+    "rules": {
+      // "parameter.mutable": {
+      //   "bold": true,
+      //   "underline": false
+      // },
+      // "selfKeyword.mutable": {
+      //   "bold": true,
+      //   "underline": false
+      // },
+      // "variable.mutable": {
+      //   "bold": true,
+      //   "underline": false
+      // },
+      "builtinType": "#57adf3",
+      // "comment": "#9a9ca3",
+      "enum": "#57adf3",
+      "enumMember": "#e2e6a4",
+      "formatSpecifier": "#6abfca",
+      "function.attribute": "#ad7da4",
+      "function": "#ffb067",
+      "interface": "#C3E88D",
+      "keyword.controlFlow": "#e083cc",
+      "keyword": "#ad86d6",
+      "macro": "#fa7f38",
+      "namespace": "#be7660",
+      "number": "#58daa4",
+      // "operator": "#fa5538",
+      "parameter": "#aae1ff",
+      "punctuation.injected": "#D4D4D4",
+      "selfKeyword": "#f08cad",
+      "string": "#166B57",
+      "struct": "#57adf3",
+      "typeAlias": "#57adf3",
+      "typeParameter": "#F78C6C",
+      "union": "#57adf3",
+      "unresolvedReference": "#accfcf",
+      "variable.static": "#8ae9e4",
+      "variable": "#aae1ff"
+    }
+  },
+  "workbench.colorTheme": "Material Theme Darker",
+  "editor.tokenColorCustomizations": {
+    // "comments": "#9a9ca3",
+    "functions": "#ffb067",
+    "keywords": "#ad86d6",
+    "numbers": "#58daa4",
+    "strings": "#89b171",
+    "textMateRules": [
+      {
+        "scope": "meta.type_params.rust",
+        "settings": {
+          "foreground": "#57adf3",
+          "fontStyle": ""
+        }
+      },
+      {
+        "scope": "entity.name.type.core.rust",
+        "settings": {
+          "foreground": "#4fc5bb",
+          "fontStyle": ""
+        }
+      }
+    ],
+    "types": "#57adf3",
+    "variables": "#eeffff"
+  }
+}
