@@ -1,0 +1,1 @@
+# syntax-highlighting-of-rust-analyzer-in-VS-Code
