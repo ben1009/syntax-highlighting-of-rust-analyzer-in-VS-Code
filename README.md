@@ -4,4 +4,4 @@
 - [`Semantic-Highlighting-Overview`](https://github.com/microsoft/vscode/wiki/Semantic-Highlighting-Overview)
 - [`editor-features`](https://rust-analyzer.github.io/manual.html#editor-features)
 - `snapshot`
-- ![img.png](img.png)
+![img.png](img.png)
