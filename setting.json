@@ -22,8 +22,9 @@
     // "editorInlayHint.parameterForeground": "#486148f0",
     // "editorInlayHint.background": "#00000000",
     "editorInlayHint.foreground": "#666666FF",
+    "list.inactiveSelectionBackground": "#2b452b",
   },
-  "http.proxySupport": "off",
+
   "go.toolsManagement.autoUpdate": true,
   "editor.wordWrap": "on",
   "[Log]": {},
@@ -51,11 +52,10 @@
       // "borderRadius": "2px", //NOTE: using borderRadius along with `border` or you will see nothing change
       "backgroundColor": "rgba(0,0,0,.2)"
       // "isWholeLine": true,
-      //other styling properties goes here ... 
+      //other styling properties goes here ...
     }
   ],
   "todohighlight.isCaseSensitive": false,
-  "workbench.iconTheme": "eq-material-theme-icons-light",
   "editor.fontFamily": "fira code, Menlo, Monaco, 'Courier New', monospace",
   // Controls the font family.
   // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
@@ -66,6 +66,7 @@
   "todohighlight.isEnable": true,
   "rust-analyzer.check.command": "clippy",
   "rust-analyzer.procMacro.enable": true,
+  "rust-analyzer.cargo.buildScripts.enable": true,
   "editor.semanticTokenColorCustomizations": {
     "enabled": true,
     "rules": {
@@ -138,7 +139,8 @@
   "codeium.enableConfig": {
     "*": true,
     "Log": true,
-    "markdown": true
+    "markdown": true,
+    "plaintext": true
   },
   "errorLens.gutterIconsEnabled": true,
   "errorLens.statusBarIconsEnabled": true,
@@ -147,4 +149,24 @@
   ],
   "errorLens.statusBarColorsEnabled": true,
   "lldb.suppressUpdateNotifications": true,
+  "gitlens.remotes": [
+    {
+      "domain": "gitee.com",
+      "type": "GitHub"
+    },
+    {
+      "domain": "github.com",
+      "type": "GitHub"
+    }
+  ],
+  "rust-test-lens.args.main": [
+    "--nocapture"
+  ],
+  "rust-test-lens.args.tests": [
+    "--nocapture"
+  ],
+  "gitlens.autolinks": [],
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "http.proxy": "http://127.0.0.1:7890",
+  "http.proxySupport": "on"
 }
