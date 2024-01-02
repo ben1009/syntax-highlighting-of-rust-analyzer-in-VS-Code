@@ -2,7 +2,6 @@
   "window.zoomLevel": 2,
   "go.useLanguageServer": true,
   "workbench.sideBar.location": "right",
-  "editor.fontLigatures": true,
   "files.autoSave": "afterDelay",
   "editor.formatOnSave": true,
   "go.formatTool": "gofmt",
@@ -22,9 +21,11 @@
     // "editorInlayHint.parameterForeground": "#486148f0",
     // "editorInlayHint.background": "#00000000",
     "editorInlayHint.foreground": "#666666FF",
+    // "sideBar.foreground": "#9A9A9A",
+    // "list.focusBackground": "#571863",
+    // "list.inactiveFocusBackground": "#56186393",
     "list.inactiveSelectionBackground": "#2b452b",
   },
-
   "go.toolsManagement.autoUpdate": true,
   "editor.wordWrap": "on",
   "[Log]": {},
@@ -56,7 +57,10 @@
     }
   ],
   "todohighlight.isCaseSensitive": false,
-  "editor.fontFamily": "fira code, Menlo, Monaco, 'Courier New', monospace",
+  // "editor.fontFamily": "'Monaspace RADON', monospace",
+  "editor.fontLigatures": true,
+  // "editor.fontLigatures": "'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08', 'calt', 'dlig'",
+  "editor.fontFamily": "'fira code',  monospace",
   // Controls the font family.
   // Controls the line height. Use 0 to compute the lineHeight from the fontSize.
   // "editor.lineHeight": 24,
@@ -109,7 +113,6 @@
       "variable": "#aae1ff"
     }
   },
-  "workbench.colorTheme": "Community Material Theme Darker",
   "editor.tokenColorCustomizations": {
     // "comments": "#9a9ca3",
     "functions": "#ffb067",
@@ -135,12 +138,12 @@
     "types": "#57adf3",
     "variables": "#eeffff"
   },
-  "diffEditor.ignoreTrimWhitespace": false,
   "codeium.enableConfig": {
     "*": true,
     "Log": true,
     "markdown": true,
-    "plaintext": true
+    "plaintext": true,
+    "ssh_config": true
   },
   "errorLens.gutterIconsEnabled": true,
   "errorLens.statusBarIconsEnabled": true,
@@ -165,8 +168,23 @@
   "rust-test-lens.args.tests": [
     "--nocapture"
   ],
-  "gitlens.autolinks": [],
   "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "diffEditor.ignoreTrimWhitespace": false,
+  "window.commandCenter": false,
+  "gitlens.advanced.messages": {
+    "suppressIntegrationDisconnectedTooManyFailedRequestsWarning": true
+  },
   "http.proxy": "http://127.0.0.1:7890",
-  "http.proxySupport": "on"
+  "http.proxySupport": "on",
+  "cmake.configureOnOpen": true,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "remote.SSH.useLocalServer": false,
+  "remote.SSH.remotePlatform": {
+    "192.168.10.199": "linux",
+    "192.168.10.104": "linux",
+    "ubuntu_liuhe_remote": "linux",
+    "remote": "linux",
+    "192.168.10.197": "linux"
+  },
+  "workbench.colorTheme": "Community Material Theme Darker",
 }
