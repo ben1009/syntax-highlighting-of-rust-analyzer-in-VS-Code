@@ -141,9 +141,13 @@
   "codeium.enableConfig": {
     "*": true,
     "Log": true,
-    "markdown": true,
     "plaintext": true,
-    "ssh_config": true
+    "ssh_config": true,
+    "markdown": true,
+    "properties": true,
+    "ignore": true,
+    "xml": true,
+    "diff": true
   },
   "errorLens.gutterIconsEnabled": true,
   "errorLens.statusBarIconsEnabled": true,
@@ -168,14 +172,13 @@
   "rust-test-lens.args.tests": [
     "--nocapture"
   ],
-  "workbench.iconTheme": "eq-material-theme-icons-darker",
   "diffEditor.ignoreTrimWhitespace": false,
   "window.commandCenter": false,
   "gitlens.advanced.messages": {
     "suppressIntegrationDisconnectedTooManyFailedRequestsWarning": true
   },
-  "http.proxy": "http://127.0.0.1:7890",
-  "http.proxySupport": "on",
+  // "http.proxy": "http://127.0.0.1:7890",
+  // "http.proxySupport": "on",
   "cmake.configureOnOpen": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "remote.SSH.useLocalServer": false,
@@ -184,7 +187,13 @@
     "192.168.10.104": "linux",
     "ubuntu_liuhe_remote": "linux",
     "remote": "linux",
-    "192.168.10.197": "linux"
+    "192.168.10.197": "linux",
+    "106.63.8.185": "linux",
+    "192.168.31.28": "linux",
+    "192.168.31.27": "linux"
   },
-  "workbench.colorTheme": "Community Material Theme Darker",
+  "security.promptForLocalFileProtocolHandling": false,
+  "makefile.configureOnOpen": true,
+  "workbench.colorTheme": "Material Theme Darker",
+  "workbench.iconTheme": "Monokai Pro Light Icons",
 }
