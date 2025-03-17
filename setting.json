@@ -182,16 +182,6 @@
   "cmake.configureOnOpen": true,
   "liveServer.settings.donotShowInfoMsg": true,
   "remote.SSH.useLocalServer": false,
-  "remote.SSH.remotePlatform": {
-    "192.168.10.199": "linux",
-    "192.168.10.104": "linux",
-    "ubuntu_liuhe_remote": "linux",
-    "remote": "linux",
-    "192.168.10.197": "linux",
-    "106.63.8.185": "linux",
-    "192.168.31.28": "linux",
-    "192.168.31.27": "linux"
-  },
   "security.promptForLocalFileProtocolHandling": false,
   "makefile.configureOnOpen": true,
   "workbench.colorTheme": "Material Theme Darker",
