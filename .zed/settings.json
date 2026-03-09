@@ -1,0 +1,163 @@
+// Zed settings converted from VSCode
+// Original VSCode settings: https://github.com/ben1009/syntax-highlighting-of-rust-analyzer-in-VS-Code/blob/main/setting.json
+//
+// Installation:
+// 1. Copy this file to ~/.config/zed/settings.json (Linux) or ~/Library/Application Support/Zed/settings.json (macOS)
+// 2. Restart Zed or run "zed: reload settings" from command palette
+//
+// Note: Zed doesn't support direct semantic token color customization like VSCode.
+// For the exact color theme, you may need to install a Zed theme extension.
+
+{
+  // Theme settings
+  "theme": {
+    "mode": "system",
+    "light": "One Light",
+    "dark": "Material Theme Darker"
+  },
+
+  // Font settings - matched from VSCode
+  "buffer_font_size": 11,
+  "buffer_font_family": "Fira Code",
+  "buffer_font_features": {
+    "calt": true,
+    "liga": true
+  },
+
+  // UI Font
+  "ui_font_size": 16,
+  "ui_font_family": "System UI",
+
+  // Editor behavior - matched from VSCode
+  "format_on_save": "on",
+  "auto_save": {
+    "after_delay": {
+      "milliseconds": 1000
+    }
+  },
+  "soft_wrap": "editor_width",
+  "ensure_final_newline_on_save": true,
+  "remove_trailing_whitespace_on_save": true,
+
+  // Project panel on right (matching VSCode workbench.sideBar.location: "right")
+  "project_panel": {
+    "button": true,
+    "default_width": 240,
+    "dock": "right"
+  },
+
+  // Terminal settings
+  "terminal": {
+    "font_family": "Fira Code",
+    "font_size": 11,
+    "shell": "system"
+  },
+
+  // Language specific settings
+  "languages": {
+    "Rust": {
+      "format_on_save": "on",
+      "preferred_line_length": 100,
+      "soft_wrap": "preferred_line_length"
+    },
+    "Go": {
+      "format_on_save": "on",
+      "preferred_line_length": 100
+    },
+    "Markdown": {
+      "soft_wrap": "editor_width"
+    }
+  },
+
+  // LSP settings - rust-analyzer configuration from VSCode
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "check": {
+          "command": "clippy"
+        },
+        "procMacro": {
+          "enable": true
+        },
+        "cargo": {
+          "buildScripts": {
+            "enable": true
+          }
+        }
+      }
+    }
+  },
+
+  // File exclusions - matched from VSCode
+  "file_scan_exclusions": [
+    "**/.git",
+    "**/.DS_Store",
+    "**/node_modules",
+    "**/target",
+    "**/out",
+    "**/dist",
+    "**/.idea",
+    "**/.vscode"
+  ],
+
+  // Git settings - GitLens equivalent features
+  "git": {
+    "inline_blame": {
+      "enabled": true
+    }
+  },
+
+  // Diagnostics - ErrorLens equivalent
+  "diagnostics": {
+    "include_warnings": true,
+    "inline": {
+      "enabled": true
+    }
+  },
+
+  // Editor settings
+  "tab_size": 4,
+  "hard_tabs": false,
+  "preferred_line_length": 100,
+  "show_whitespaces": "selection",
+  "show_wrap_guides": true,
+  "wrap_guides": [80, 100],
+
+  // Scroll behavior
+  "scroll_sensitivity": 1.0,
+  "scroll_beyond_last_line": "one_page",
+
+  // Inlay hints (VSCode editorInlayHint equivalent)
+  "inlay_hints": {
+    "enabled": true,
+    "show_type_hints": true,
+    "show_parameter_hints": true,
+    "show_other_hints": true
+  },
+
+  // Assistant/AI - Zed has built-in assistant
+  "assistant": {
+    "default_model": {
+      "provider": "openai",
+      "model": "gpt-4"
+    },
+    "version": "2"
+  },
+
+  // Toolbar and UI
+  "toolbar": {
+    "breadcrumbs": true,
+    "quick_actions": true
+  },
+
+  // Vertical scroll margin
+  "vertical_scroll_margin": 3,
+
+  // Hover popover
+  "hover_popover_enabled": true,
+
+  // Bracket matching
+  "use_autoclose": true,
+  "use_smartcase_search": true,
+  "use_multibyte": true
+}
